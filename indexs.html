@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0"> 
+
+
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+<link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+<div id="grid-container">
+<div id="grid1">
+ <h1> Learn to code by watching others</h1>
+<p id="grid1-p1"> See how experienced developers solve problems in real-time. watching scripted tutorials is great, but understanding how developers think is invaluable. </p>
+</div>
+
+<div id="grid2"> 
+<p id="grid2-p1"> Try it free 7 days <span>then <br>$20/mo. thereafter</span></p>
+</div>
+
+
+<div id="grid3">
+<form onsubmit="return validate()">
+<div id="input1">
+<input id="fname" type="text" placeholder="First Name"><svg id="svg" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+<label for="fname" id="error1"></label>
+</div>
+
+<div id="input1">
+<input id="lname" type="text" placeholder="Last Name">
+<svg id="svg2" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+<label for="lname" id="error2"></label>
+</div>
+
+<input id="email" type="text" placeholder="Email address">
+<label for="email" id="error3"></label>
+
+<input id="pass" type="password" placeholder="Password">
+<label for="email" id="error4"></label>
+
+<button id="button" onclick="validate()" type="submit">CLAIM YOUR FREE TRIAL</button>
+</form>
+<p id="form-p1"> By clicking the button, you are agreeing to our <span id="form-span"> Terms and Services<span>
+</div>
+
+</div>
+
+<script src="signup.js">
+</script>
+</body>
+</html>
+
+
+
+
+
