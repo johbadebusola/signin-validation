@@ -97,7 +97,7 @@ function displayNetwork(){
 
        
         if(teleNo.value === airtelCode[i]){
-            networkLogo.style.background = `url("airtel-logo.png") center/100% 100%`
+            networkLogo.style.background = `url("Airtel-logo.png") center/100% 100%`
         }
     }
     //displaying mtn logo
