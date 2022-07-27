@@ -50,25 +50,26 @@ function send(Event){
      teleNo.style.border = "1px solid red"
      error.style.fontFamily = "monospace"
         return false;
-    }else{
-        teleNo.style.border = "1px solid green"
     }
     if (!teleNo.value.match(/^([0][8][0][2]|[0][9][0][2]|[0][7][0][1]|[0][8][0][8]|[0][7][0][8]|[0][8][1][2])[0-9]{7}$/)){
         error.innerHTML = "*Only Airtel no is allowed"
         error.style.color = "tomato"
+        teleNo.style.border = "1px solid red"
         return false;
       }else{
         teleNo.style.border = "1px solid green"
     }
+    
     // validations for password
-    if (pass.value.length < 7 ){
+    if (pass.value.length <= 7 ){
         error.innerHTML = "*Password must be more than 7 characters "
         error.style.color = "red"
-        teleNo.style.border = "1px solid red"
+        pass.style.border = "1px solid red"
         error.style.fontFamily = "monospace"
            return false;
        }
     else{
+       
         error.innerHTML = ""
         console.log("submitted")
     }
